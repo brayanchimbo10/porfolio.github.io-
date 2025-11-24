@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Favorite Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    header {
+      background: #0f766e;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 1.5rem auto 2rem;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(15,23,42,0.08);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(15,23,42,0.08);
+    }
+
+    .book-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #0f172a;
+    }
+
+    .book-card p {
+      margin: 0.35rem 0;
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      background: #ecfeff;
+      color: #0f766e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0b1120;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Favorite Books</h1>
+    <p>Stories and ideas that inspired me as a student.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Why I Love Reading</h2>
+      <p>Reading helps me relax, learn new things, and imagine different worlds. Here are a few books I recommend to friends and classmates.</p>
+    </section>
+
+    <section class="grid">
+      <article class="book-card">
+        <h2>Atomic Habits</h2>
+        <p><strong>Author:</strong> James Clear</p>
+        <p>A book about small habits and how tiny changes can create big results over time.</p>
+        <span class="tag">Self-Improvement</span>
+      </article>
+
+      <article class="book-card">
+        <h2>The Alchemist</h2>
+        <p><strong>Author:</strong> Paulo Coelho</p>
+        <p>A story about following your dreams and finding your own path in life.</p>
+        <span class="tag">Fiction</span>
+      </article>
+
+      <article class="book-card">
+        <h2>Clean Code</h2>
+        <p><strong>Author:</strong> Robert C. Martin</p>
+        <p>Great for programmers who want to learn how to write better, cleaner code.</p>
+        <span class="tag">Programming</span>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 [Your Name] – Favorite Books Project
+  </footer>
+
+</body>
+</html>
